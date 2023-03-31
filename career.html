@@ -79,7 +79,7 @@
             max-width: 800px;
             margin: 0 auto;
             background-color: #fff;
-            padding: 35px 25px;
+            padding: 35px 20px;
             border-radius: 10px;
             box-shadow: -20px 18px 12px 0px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -107,9 +107,9 @@
             border-radius: 5px;
             border:none;
             background-color: #eaf7ff;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 400;
-            color: #17a2b8;
+            color: #000000;
             margin-bottom: 20px;
             width: 100%;
             box-sizing: border-box;
@@ -166,7 +166,7 @@
                 <div class="containerForm" style="padding: 2rem 2rem 2rem 2rem;">
                     <div class="col-12" style="display: flex;justify-content: center;margin-bottom: 20px;">
                         <h3
-                            style="border-top: 0.5px solid #00a1fe;border-bottom: 0.5px solid #00a1fe;border-radius: 3px;padding: 8px;background: #e7f6ffc4; color: #00a1fe;font-weight: 600;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            style="border-top: 0.5px solid #000000;border-bottom: 0.5px solid #000000;border-radius: 3px;padding: 8px;background: #e7f6ffc4; color: #000000;font-weight: 600;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
                             Apply Here</h3>
                     </div>
                     <form action="" class="mbr-form form-with-styler" data-form-title="Form Name" id="form">
@@ -174,19 +174,20 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <input type="text" id="name" name="name" class="FormInput" placeholder="Name" required>
+                                <input type="text" value="" id="name" name="name" class="FormInput" placeholder="Name" required>
                             </div>
                             <div class="col-6">
-                                <input type="text" id="phone" name="phone" class="FormInput" placeholder="Phone Number"
-                                    required>
+                                <input type="email" value="" id="email" name="email" class="FormInput" placeholder="Email Address"
+                            required>
                             </div>
                         </div>
-                        <input type="email" id="email" name="email" class="FormInput" placeholder="Email Address"
+                        <input type="text" value="" id="phone" name="phone" class="FormInput" placeholder="Phone Number"
+                        required>
+                       
+                        <input type="text" value="" id="position" name="position" class="FormInput" placeholder="Position"
                             required>
-                        <input type="text" id="position" name="position" class="FormInput" placeholder="Position"
-                            required>
-                        <textarea id="Address" name="Address" class="FormInput" placeholder="Address"></textarea>
-                        <input type="file" id="resume" name="resume" class="FormInput" placeholder="Upload Your Resume"
+                        <textarea id="Address" value="" name="Address" class="FormInput" placeholder="Address"></textarea>
+                        <input type="file" id="resume" value="" name="resume" class="FormInput" placeholder="Upload Your Resume"
                             required>
                         <div class="row">
                             <div class="col-7">
@@ -196,7 +197,7 @@
                                     style="background: #00a1fe;padding: 8px 22px 8px 22px;border-radius: 3px;">Submit</button>
                             </div>
                             <div class="col-5" style="display: flex;justify-content: end;">
-                                <span id="success" style="color: green;">Successfully Submitted !!</span>
+                                <span id="success" style="color: green;display: none;">Successfully Submitted !!</span>
                             </div>
                         </div>
 
@@ -205,7 +206,7 @@
                 </form>
             </div>
         </div>
-        <div id="resume" class="col-12 col-lg-4 col-xl-4 col-md-12 order-lg-2 corder-xl-2 order-1">
+        <div id="resumes" class="col-12 col-lg-4 col-xl-4 col-md-12 order-lg-2 corder-xl-2 order-1">
             <div class="row" style="padding:9rem 2rem 8rem 2rem ;">
                 <div class="col-12" style="display: flex;justify-content: center;margin-left:-90px;">
                     <img src="assets/images/Resume-bro.png" alt="" width="700">
@@ -449,16 +450,6 @@
             element.style.display = 'none';
         }
 
-    </script>
-    <script>
-        $(document).ready(function () {
-            element = document.querySelector('#success');
-            element.style.display = 'none';
-        });
-        function Reset() {
-
-            $("#form")[0].reset();
-        }
     </script>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -39,7 +39,7 @@
 	color: #316ce8;
 }
 @media screen and  (max-width:998px) {
-  #resume{
+  #resumes{
   display: none;
 }
 }
