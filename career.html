@@ -103,19 +103,24 @@
         }
 
         .FormInput {
-            padding: 10px;
+            padding: 10px 20px;
             border-radius: 5px;
-            border: none;
-            background-color: #f2f2f2;
-            font-size: 16px;
+            border:none;
+            background-color: #eaf7ff;
+            font-size: 15px;
             font-weight: 400;
-            color: #333;
+            color: #17a2b8;
             margin-bottom: 20px;
             width: 100%;
             box-sizing: border-box;
             resize: none;
         }
-
+.FormInput:hover{
+    background-color: #ccecff;
+}
+.FormInput:focus{
+    border: 0.5px solid #00a1fe;
+}
         textarea {
             height: 150px;
         }
@@ -125,8 +130,8 @@
             color: #fff;
             padding: 10px 20px;
             border: none;
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 500;
             cursor: pointer;
         }
     </style>
@@ -160,65 +165,55 @@
             <div style="padding:10rem 10px 8rem 10px ;">
                 <div class="containerForm" style="padding: 2rem 2rem 2rem 2rem;">
                     <div class="col-12" style="display: flex;justify-content: center;margin-bottom: 20px;">
-                        <h2
+                        <h3
                             style="border-top: 0.5px solid #00a1fe;border-bottom: 0.5px solid #00a1fe;border-radius: 3px;padding: 8px;background: #e7f6ffc4; color: #00a1fe;font-weight: 600;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                            Apply Here</h2>
+                            Apply Here</h3>
                     </div>
                     <form action="" class="mbr-form form-with-styler" data-form-title="Form Name" id="form">
                         <input type="hidden" name="email" data-form-email="true" value="" novalidate>
 
-                        <div class="dragArea row">
-                            <div class="col-lg-6 col-md-12 col-sm-12 form-group mb-3" data-for="name">
-                                <input type="text" name="name" placeholder="Name" data-form-field="name"
-                                    class="form-control display-7" value="" id="name-form03-8" required>
-
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" id="name" name="name" class="FormInput" placeholder="Name" required>
                             </div>
-                            <div data-for="email" class="col-lg-6 col-md-12 col-sm-12 form-group mb-3">
-                                <input type="email" name="email" placeholder="Email" data-form-field="email"
-                                    class="form-control display-7" value=" " id="email-form03-8" required>
+                            <div class="col-6">
+                                <input type="text" id="phone" name="phone" class="FormInput" placeholder="Phone Number"
+                                    required>
                             </div>
-                            <div data-for="subject" class="col-lg-6 col-md-12 col-sm-12 form-group mb-3">
-                                <input type="text" name="subject" placeholder="Subject" data-form-field="subject"
-                                    class="form-control display-7" value="" id="subject-form03-8" required>
-                            </div>
-                            <div data-for="phone" class="col-lg-6 col-md-12 col-sm-12 form-group mb-3">
-                                <input type="number" name="phone" placeholder="Phone" data-form-field="phone"
-                                    class="form-control display-7" value="" id="phone-form03-8" required>
-                            </div>
-                            <div data-for="file" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
-                                <input type="file" name="file" data-form-field="file" class="form-control display-7" id="file-form03-8" required>
-                            </div>                            
-                            <div data-for="message" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
-                                <textarea name="message" rows="5" placeholder="Message" data-form-field="message"
-                                    class="form-control display-7" id="message-form03-8"></textarea>
-                            </div>
-                            <div class="row">
-                                <div class="col-8">
-                                    <button onclick="Reset()"
-                                        style="background: #fe0000;padding: 7px 10px 7px 10px;border-radius: 3px;">Clear</button>
-                                    <button type="submit"
-                                        style="background: #00a1fe;padding: 7px 20px 7px 20px;border-radius: 3px;">Submit</button>
-                                </div>
-                                <div class="col-4" style="display: flex;justify-content: end;">
-                                    <span id="success" style="color: green;">Successfully Submitted !!</span>
-                                </div>
-                            </div>
-
-
                         </div>
-                    </form>
+                        <input type="email" id="email" name="email" class="FormInput" placeholder="Email Address"
+                            required>
+                        <input type="text" id="position" name="position" class="FormInput" placeholder="Position"
+                            required>
+                        <textarea id="Address" name="Address" class="FormInput" placeholder="Address"></textarea>
+                        <input type="file" id="resume" name="resume" class="FormInput" placeholder="Upload Your Resume"
+                            required>
+                        <div class="row">
+                            <div class="col-7">
+                                <button onclick="Reset()"
+                                    style="background: #fe0000;padding: 8px 12px 8px 12px;border-radius: 3px;margin-bottom: 5px;">Clear</button>
+                                <button type="submit"
+                                    style="background: #00a1fe;padding: 8px 22px 8px 22px;border-radius: 3px;">Submit</button>
+                            </div>
+                            <div class="col-5" style="display: flex;justify-content: end;">
+                                <span id="success" style="color: green;">Successfully Submitted !!</span>
+                            </div>
+                        </div>
+
+
                 </div>
+                </form>
             </div>
         </div>
-        <!-- <div class="col-12 col-lg-4 col-xl-4 col-md-12 order-lg-2 corder-xl-2 order-1">
-            <div class="row" style="padding:0rem 2rem 0rem 2rem ;position: relative;top: 10rem;right: 3rem;background-color: white;border-radius: 3px;">
+    </div>
+    <div class="col-12 col-lg-4 col-xl-4 col-md-12 order-lg-2 corder-xl-2 order-1">
+            <div class="row" style="padding:0rem 2rem 0rem 2rem ;">
                 <div class="col-12" style="display: flex;justify-content: center;">
-                    <img id="resume" src="assets/images/edlogo.png" alt="" width="400" height="200">
+                    <img id="resume" src="assets/images/Resume-bro.png" alt="" width="200" height="200">
                 </div>
-                <p style="color: black;">Our company fosters a culture of growth and development for our employees, believing that happy team members bring their best selves to work, leading to greater success. We provide ongoing training, competitive compensation and benefits, and a supportive, inclusive work environment. Join our team to help achieve our mission and explore job openings in your field.</p>
-
+                
             </div>
-        </div> -->
+        </div>
 
     </div>
 
@@ -394,66 +389,66 @@
         });
 
     </script>
-   <script>
-// document.getElementById("form").addEventListener("submit", function(event) {
-//   event.preventDefault();
+    <script>
+        // document.getElementById("form").addEventListener("submit", function(event) {
+        //   event.preventDefault();
 
-//   var xhr = new XMLHttpRequest();
-//   xhr.open("POST", "https://script.google.com/macros/s/AKfycbzQF75WfvrHmIZKF6QOLeKmq_a43N4ORvjD1SgtE-zY8BuA1YIooptyNjeX7Ou-CM1V/exec");
+        //   var xhr = new XMLHttpRequest();
+        //   xhr.open("POST", "https://script.google.com/macros/s/AKfycbzQF75WfvrHmIZKF6QOLeKmq_a43N4ORvjD1SgtE-zY8BuA1YIooptyNjeX7Ou-CM1V/exec");
 
-//   xhr.onreadystatechange = function() {
-//     if (xhr.readyState === 4 && xhr.status === 200) {
-//       document.getElementById("success").style.display = "block";
-//       document.getElementById("form")[0].reset();
-//       window.setInterval(hide,2000)
-//     }
-//   };
-//   xhr.addEventListener("error", function() {
-//   console.log("An error occurred while submitting the form.");
-// });
+        //   xhr.onreadystatechange = function() {
+        //     if (xhr.readyState === 4 && xhr.status === 200) {
+        //       document.getElementById("success").style.display = "block";
+        //       document.getElementById("form")[0].reset();
+        //       window.setInterval(hide,2000)
+        //     }
+        //   };
+        //   xhr.addEventListener("error", function() {
+        //   console.log("An error occurred while submitting the form.");
+        // });
 
-//   var formData = new FormData(document.getElementById("form"));
-//   xhr.send(formData);
-// });
+        //   var formData = new FormData(document.getElementById("form"));
+        //   xhr.send(formData);
+        // });
 
 
-    $("#form").submit((e) => {
-        e.preventDefault()
-        $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbwdHTcd8QfL7tvjSBPHmjfu8cLyd0B-ihRWV5ZBygxIYIyKXIFI7nTl4047WmPtm8FW/exec",
-            data: $("#form").serialize(),
-            method: "post",
-            success: function (response) {
-                show();
-               reset();
-               window.setInterval(hide,2000)
-                //window.location.href="https://google.com"
-            },
-            error: function (err) {
-                alert(err.message)
-            }
-        })
-    });
-    function reset(){
-        $("#form")[0].reset();
-    }
-
-    setInterval(function () {
-        if (document.activeElement instanceof HTMLIFrameElement) {
-            document.getElementById('cover').style.opacity = 0;
-            document.getElementById('player').style.opacity = 1;
+        $("#form").submit((e) => {
+            e.preventDefault()
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbw0J35XjFigjC3jFX3s0c_i8hcrR3rs7euU5pktoYYYAnmz2UUFNLRe5A4tCQP7wzSO/exec",
+                data: $("#form").serialize(),
+                method: "post",
+                success: function (response) {
+                    show();
+                    reset();
+                    window.setInterval(hide, 2000)
+                    //window.location.href="https://google.com"
+                },
+                error: function (err) {
+                    alert(err.message)
+                }
+            })
+        });
+        function reset() {
+            $("#form")[0].reset();
         }
-    }, 50);
-    function show(){
-        element = document.querySelector('#success');
-            element.style.display = 'block';
-    };
-    function hide(){
-        element = document.querySelector('#success');
-            element.style.display = 'none';
-    }
 
-</script>
+        setInterval(function () {
+            if (document.activeElement instanceof HTMLIFrameElement) {
+                document.getElementById('cover').style.opacity = 0;
+                document.getElementById('player').style.opacity = 1;
+            }
+        }, 50);
+        function show() {
+            element = document.querySelector('#success');
+            element.style.display = 'block';
+        };
+        function hide() {
+            element = document.querySelector('#success');
+            element.style.display = 'none';
+        }
+
+    </script>
     <script>
         $(document).ready(function () {
             element = document.querySelector('#success');
