@@ -264,22 +264,22 @@ body {
   transform: translateY(-3px);
 }
 .btn-success {
-  background-color: #e3e5e713 !important;
-  background: linear-gradient(90deg, #f4f3f512 0%, #f6f6f7c4 90%);
+  background-color: #4fb4eb ;
   border: none;
   transition: all 0.3s;
 }
 .btn-success,
 .btn-success:active {
-  background-color: #4a6586;
-  color: #0b0644 !important;
+  background-color: #4fb4eb ;
+  color: #ffffff !important;
 }
 .btn-success:hover,
 .btn-success:focus,
 .btn-success.focus,
 .btn-success.active {
-  color: #0c0101 !important;
-  background-color: #2b3b4e;
+  color: #4fb4eb  !important;
+  background-color: #ffffff;
+  border: 0.5px solid #4fb4eb ;
 }
 .btn-success.disabled,
 .btn-success:disabled {
@@ -701,11 +701,13 @@ a:hover {
 .scrollToTop_wraper {
   display: none;
 }
+
 .form-control {
   font-family: 'Lexend', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
+  background-color: #ffffff7d;
 }
 .form-control > .mbr-iconfont {
   font-size: 1.25rem;
@@ -713,7 +715,7 @@ a:hover {
 .form-control:hover,
 .form-control:focus {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
-  border-color: #56667b !important;
+  border-color: #00a1fe !important;
 }
 .form-control:-webkit-input-placeholder {
   font-family: 'Lexend', sans-serif;
@@ -1195,7 +1197,7 @@ a {
   backdrop-filter: blur(3.5px);
 }
 .cid-sz55N7vCP2 .card-wrapper {
-  background: linear-gradient(0deg, rgba(113, 111, 111, 0.3) 10%, rgba(249, 248, 248, 0.768) 40%);
+  background-color: white;
   backdrop-filter: blur(3.5px);
   box-shadow: 0px 9px 1px  rgba(0, 0, 0, 0.193);
   border-radius: 10px;
