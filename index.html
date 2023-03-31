@@ -55,7 +55,8 @@
     </noscript>
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
 
 
@@ -72,75 +73,80 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-     
- 
         .containerForm {
-            top: 10%;;
-          max-width: 800px;
-          margin: 0 auto;
-          background-color: #fff;
-          padding: 35px 25px;
-          border-radius: 10px;
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: center;
+            top: 10%;
+            ;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 35px 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
         }
+
         .modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-color: #fff0;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 0.3rem;
-    outline: 0;
-}
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            pointer-events: auto;
+            background-color: #fff0;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 0.3rem;
+            outline: 0;
+        }
+
         form {
-          flex-basis: 100%;
+            flex-basis: 100%;
         }
+
         label {
-          display: block;
-          font-size: 16px;
-          font-weight: 500;
-          color: #333;
-          margin-bottom: 10px;
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 10px;
         }
+
         .FormInput {
-          padding: 10px;
-          border-radius: 5px;
-          border: none;
-          background-color: #f2f2f2;
-          font-size: 16px;
-          font-weight: 400;
-          color: #333;
-          margin-bottom: 20px;
-          width: 100%;
-          box-sizing: border-box;
-          resize: none;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f2f2f2;
+            font-size: 16px;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            resize: none;
         }
+
         textarea {
-          height: 150px;
+            height: 150px;
         }
+
         button {
-          background-color: #333;
-          color: #fff;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 5px;
-          font-size: 16px;
-          font-weight: 700;
-          text-transform: uppercase;
-          cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
         }
+
         button:hover {
-          background-color: #444;
+            background-color: #444;
         }
-         
-        </style>
+    </style>
 </head>
 
 <body>
@@ -166,46 +172,53 @@
             </ul>
 
     </header>
-<!--the modal-->
-<div class="modal" id="myModal" >
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-  
-        <!-- Modal body -->
-        
-        
-          <div class="containerForm">
-            <div style="float: right;">
-                <button type="button" class="btn-close" id="formClose" data-bs-dismiss="modal">
+    <!--the modal-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
 
-                </button></div>
-             
-            <h1>Career Application Form</h1>
-            <form id="Career" action="" >
-             
-              <input type="text" id="name" name="name" class="FormInput" placeholder="Name" required>
-        
-              <input type="email" id="email" name="email" class="FormInput" placeholder="Email Address" required>
-        
-              <input type="text" id="phone" name="phone" class="FormInput" placeholder="Phone Number" required>
-        
-              <input type="text" id="position" name="position" class="FormInput" placeholder="Position" required>
-        
-              <input type="file" id="resume" name="resume" class="FormInput" placeholder="Upload Your Resume" required>
-        
-              <textarea id="cover-letter" name="cover-letter" class="FormInput" placeholder="Cover Letter"></textarea>
-        
-                    <button type="submit">Submit Application</button>   
-                    <button type="button"   id="formClosed"  data-bs-dismiss="modal" style="background-color: red;color: rgb(255, 255, 255);">Close</button>
-                     
+                <!-- Modal body -->
 
-            </form>
-          </div>
+
+                <div class="containerForm">
+                    <div style="float: right;">
+                        <button type="button" class="btn-close" id="formClose" data-bs-dismiss="modal">
+
+                        </button>
+                    </div>
+
+                    <h1>Career Application Form</h1>
+                    <form id="Career" action="">
+
+                        <input type="text" id="name" name="name" class="FormInput" placeholder="Name" required>
+
+                        <input type="email" id="email" name="email" class="FormInput" placeholder="Email Address"
+                            required>
+
+                        <input type="text" id="phone" name="phone" class="FormInput" placeholder="Phone Number"
+                            required>
+
+                        <input type="text" id="position" name="position" class="FormInput" placeholder="Position"
+                            required>
+
+                        <input type="file" id="resume" name="resume" class="FormInput" placeholder="Upload Your Resume"
+                            required>
+
+                        <textarea id="cover-letter" name="cover-letter" class="FormInput"
+                            placeholder="Cover Letter"></textarea>
+
+                        <button type="submit">Submit Application</button>
+                        <button type="button" id="formClosed" data-bs-dismiss="modal"
+                            style="background-color: red;color: rgb(255, 255, 255);">Close</button>
+
+
+                    </form>
+                </div>
+            </div>
+            <!-- Modal footer -->
+
+
         </div>
-        <!-- Modal footer -->
-         
-  
-      </div>
     </div>
     <section data-bs-version="5" class="header1 cid-sz55N7vCP2 mbr-fullscreen" id="header01-0">
 
@@ -790,7 +803,8 @@
                 <a href="https://wa.me/+918075735144" target="_blank" class="fa fa-whatsapp"></a>
                 <a href="https://www.instagram.com/invites/contact/?i=p3e6j4mm5tiu&utm_content=q7ljunl" target="_blank"
                     class="fa fa-instagram"></a>
-                <a href="https://www.linkedin.com/in/edvisualize-pvt-ltd-0190a2262" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.linkedin.com/in/edvisualize-pvt-ltd-0190a2262" target="_blank"
+                    class="fa fa-linkedin"></a>
             </div>
         </div>
     </section>
@@ -814,28 +828,28 @@
                     currently working on 3 Projects and we are looking forward to open new ventures with finest quality
                     with affordable budget
                 </P>
-                
+
             </div>
         </div>
     </section>
 
-    
+
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
 
         <div class="container" data-aos="fade-up">
-<div id="teamWorkDiv">
-    
+            <div id="teamWorkDiv">
+
                 <h2 class="teamTitle">OUR TEAM</h2>
-</div>
-            
-                
+            </div>
+
+
 
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-4 col-sm-6 d-flex align-items-center m-auto pb-4 " data-aos="fade-up"
                     data-aos-delay="200">
-               
+
                     <div class="member">
                         <div class="member-img">
                             <img src="assets/images/boy.jpeg" class="img-fluid" alt="">
@@ -905,7 +919,7 @@
 
     </section><!-- End Team Section -->
 
-    
+
     <section data-bs-version="5" class="contacts4 cid-sz56r2ZeJA" id="contacts04-7">
 
 
@@ -958,9 +972,15 @@
                                 <textarea name="message" placeholder="Message" data-form-field="message"
                                     class="form-control display-7" id="message-form03-8"></textarea>
                             </div>
+                                <div class="col-8">
+                                    <button type="submit" class="btn btn-primary display-4">Send your
+                                        message</button>
+                                </div>
+                                <div class="col-4">
+                                    <span id="success" style="color: green;font-size: larger;">Form Submitted successfully !!</span>
+                                </div>
+                        
 
-                            <div class="col-auto"><button type="submit" class="btn btn-primary display-4">Send your
-                                    message</button></div>
                         </div>
                     </form>
 
@@ -1242,8 +1262,9 @@
                 data: $("#form").serialize(),
                 method: "post",
                 success: function (response) {
-                    alert("Form submitted successfully")
-                    window.location.reload()
+                    show();
+                   reset();
+                   window.setInterval(hide,2000)
                     //window.location.href="https://google.com"
                 },
                 error: function (err) {
@@ -1251,8 +1272,11 @@
 
                 }
             })
-        })
-     
+        });
+        function reset(){
+            $("#form")[0].reset();
+        }
+
         setInterval(function () {
             if (document.activeElement instanceof HTMLIFrameElement) {
                 document.getElementById('cover').style.opacity = 0;
@@ -1284,57 +1308,69 @@
 
 
             }
-            if(width>1150){
-            document.onclick = function (e) {
-                if (e.target.id == 'header' && e.target.id == 'toggle' && e.target.id == 'navbar') {
-                    toggle.classList.remove('active');
-                    navbar.classList.remove('active');
+            if (width > 1150) {
+                document.onclick = function (e) {
+                    if (e.target.id == 'header' && e.target.id == 'toggle' && e.target.id == 'navbar') {
+                        toggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                    }
                 }
             }
-        }
         });
 
     </script>
-     <script>
+    <script>
         function showModal() {
-          var modal = document.getElementById("myModal");
-          modal.style.display = "block";
-          var closeButton = document.getElementById("formClose");
-          closeButton.onclick = function() {
-            modal.style.display = "none";
-          }
-          var closeButton = document.getElementById("formClosed");
-          closeButton.onclick = function() {
-            modal.style.display = "none";
-          }
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+            var closeButton = document.getElementById("formClose");
+            closeButton.onclick = function () {
+                modal.style.display = "none";
+            }
+            var closeButton = document.getElementById("formClosed");
+            closeButton.onclick = function () {
+                modal.style.display = "none";
+            }
         }
-         
-        
-        </script>
-        <script>
-  $('#Career').submit(function(e) {
-    e.preventDefault();
-    var formData = new FormData(this);
-    $.ajax({
-      url: 'https://script.google.com/macros/s/AKfycbyfgzS56r9fsqF5S60dEypK980MNDQjXP2DwQZTa5ZqBoKK-9iCZu83bvHeReZHrotb/exec',
-      type: 'POST',
-      data: formData,
-      cache: false,
-      contentType: false,
-      processData: false,
-      success: function(response) {
-        console.log('Success');
-        // Add any success message or redirect to a success page
-      },
-      error: function(error) {
-        console.log('Error');
-        // Add any error message or redirect to an error page
-      }
-    });
-  });
+
+$(document).ready(function(){
+    element = document.getElementById('success');
+    element.style.display = 'none';
 });
 
-        </script>
+function show(){
+    element = document.getElementById('success');
+    element.style.display = 'block';
+};
+function hide(){
+    element = document.getElementById('success');
+    element.style.display = 'none';
+}
+    </script>
+    <script>
+        $('#Career').submit(function (e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            $.ajax({
+                url: 'https://script.google.com/macros/s/AKfycbyfgzS56r9fsqF5S60dEypK980MNDQjXP2DwQZTa5ZqBoKK-9iCZu83bvHeReZHrotb/exec',
+                type: 'POST',
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    console.log('Success');
+                    // Add any success message or redirect to a success page
+                },
+                error: function (error) {
+                    console.log('Error');
+                    // Add any error message or redirect to an error page
+                }
+            });
+        });
+
+
+    </script>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
