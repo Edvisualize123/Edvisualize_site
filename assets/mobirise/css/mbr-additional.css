@@ -1383,7 +1383,7 @@ a {
   border-radius: 9px;
 }
 .cid-sz58oYjBZ7 .glass {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+  background: linear-gradient(0deg, #ffffff 0%, #fff 100%);
   backdrop-filter: blur(3.5px);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -1889,8 +1889,8 @@ a {
 .cid-sz56r2ZeJA {
   padding-top: 3rem;
   padding-bottom: 4rem;
-  /* background-image: url("../../images/background65.jpg"); */
-  background: rgba(0, 0, 0, 0.003);
+  background-image: url("../../images/mbr-3.jpg");
+  /* background: rgba(0, 0, 0, 0.003); */
 }
 .cid-sz56r2ZeJA .mbr-iconfont {
   display: inline-flex;
@@ -1908,7 +1908,7 @@ a {
 }
 .cid-sz56r2ZeJA .row {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
-  backdrop-filter: blur(3.5px);
+  backdrop-filter: blur(10.5px);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 5rem 3rem;
@@ -1962,7 +1962,7 @@ a {
   padding-top: 90px;
   padding-bottom: 90px;
   /* background-image: url("../../images/background5.jpg"); */
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #d0e9fd;
 }
 .cid-sz57ONqHWB .header-text {
   display: flex;

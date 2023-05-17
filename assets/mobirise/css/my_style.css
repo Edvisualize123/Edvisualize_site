@@ -43,3 +43,17 @@
   display: none;
 }
 }
+
+
+.pl-0{
+  padding-left: 0px;
+}
+.pr-0{
+  padding-right: 0px;
+}
+.pr-2{
+  padding-right: 2px;
+}
+.pl-2{
+  padding-left: 2px;
+}

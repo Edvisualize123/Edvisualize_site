@@ -423,3 +423,17 @@ section {
     line-height: 32px;
   }
 }
+@media  screen and (max-width:500px) {
+  .team .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #012970;
+  }
+  .team .member .member-info span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    color: #aaaaaa;
+  }
+}
